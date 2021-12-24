@@ -23,8 +23,8 @@ module.exports = {
         test: /(?<!\.test)\.tsx?$/,
         exclude: /node_modules/,
         use: 'ts-loader',
-      }
-    ]
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({

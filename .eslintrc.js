@@ -6,28 +6,23 @@ module.exports = {
     node: true,
   },
   extends: [
-    "eslint:recommended",
+    'eslint:recommended',
     'plugin:import/errors',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2022,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: [
-    "react",
-    "import",
-    "jest",
-    "@typescript-eslint",
-  ],
+  plugins: ['react', 'import', 'jest', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-function': 'off',
@@ -39,35 +34,35 @@ module.exports = {
       'error',
       {
         alphabetize: {
-          order: 'asc'
-        }
-      }
+          order: 'asc',
+        },
+      },
     ],
     'prettier/prettier': [
       'error',
       {
         printWidth: 120,
         semi: false,
-        singleQuote: true
-      }
+        singleQuote: true,
+      },
     ],
   },
   overrides: [
     {
       files: ['**/*.tsx'],
       rules: {
-        'react/prop-types': 'off'
-      }
+        'react/prop-types': 'off',
+      },
     },
     {
       files: ['**/*.test.*'],
       env: {
-        'jest/globals': true
+        'jest/globals': true,
       },
-      extends: ['plugin:jest/recommended', 'plugin:jest/style']
-    }
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    },
   ],
   settings: {
-    "import/resolver": "webpack",
-  }
-};
+    'import/resolver': 'webpack',
+  },
+}

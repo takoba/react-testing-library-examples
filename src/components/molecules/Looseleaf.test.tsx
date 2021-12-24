@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
-import Looseleaf from 'components/molecules/Looseleaf'
 import React from 'react'
+import Looseleaf from 'components/molecules/Looseleaf'
 
 describe('<Note />', () => {
   test('should render component', () => {
