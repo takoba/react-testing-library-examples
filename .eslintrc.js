@@ -9,8 +9,10 @@ module.exports = {
     "eslint:recommended",
     'plugin:import/errors',
     'plugin:import/typescript',
+    'plugin:prettier/recommended',
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    'prettier',
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -18,7 +20,7 @@ module.exports = {
       jsx: true
     },
     ecmaVersion: 2022,
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: [
     "react",
@@ -39,6 +41,14 @@ module.exports = {
         alphabetize: {
           order: 'asc'
         }
+      }
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 120,
+        semi: false,
+        singleQuote: true
       }
     ],
   },
