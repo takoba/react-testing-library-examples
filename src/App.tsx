@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 import Looseleaf from 'components/molecules/Looseleaf'
+import TodoList from 'components/organisms/TodoList'
 
 const Title = styled.h1`
   border-left: 0.75rem solid #9cc;
@@ -18,6 +19,8 @@ const App = (): JSX.Element => (
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </Looseleaf>
+    <hr />
+    <TodoList />
   </>
 )
 
