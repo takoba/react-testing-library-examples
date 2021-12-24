@@ -1,32 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from "styled-components"
+import Looseleaf from "components/molecules/Looseleaf"
 
 const Title = styled.h1`
   border-left: 0.75rem solid #9cc;
   padding-left: 0.75rem;
 `
-
-const Looseleaf: React.FC = ({ children }): JSX.Element => {
-  const Container = styled.div`
-    background-image:
-      linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%),
-      linear-gradient(180deg, transparent 0%, transparent 97%, #9cc 97%, #9cc 100%);
-    background-size:
-      8px 100%,
-      100% 2.5rem;
-    line-height: 2.5rem;
-  `
-  const Text = styled.p`
-    overflow-wrap: break-word;
-  `
-
-  return (
-    <Container>
-      <Text>{children}</Text>
-    </Container>
-  )
-}
 
 const App = (): JSX.Element => (
   <>
