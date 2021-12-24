@@ -5,5 +5,9 @@
   "repository": "https://github.com/takoba/react-testing-library-examples",
   "author": "takoba <plane25@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "typescript": "^4.5.4"
+  }
 }
