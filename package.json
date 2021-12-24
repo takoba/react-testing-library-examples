@@ -1,0 +1,9 @@
+{
+  "name": "react-testing-library-examples",
+  "version": "0.1.0",
+  "description": "Sandbox with react + jest + @testing-library/react",
+  "repository": "https://github.com/takoba/react-testing-library-examples",
+  "author": "takoba <plane25@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
