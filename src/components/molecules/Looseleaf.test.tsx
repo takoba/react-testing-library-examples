@@ -1,5 +1,5 @@
-import {render, screen} from "@testing-library/react"
-import Looseleaf from "components/molecules/Looseleaf"
+import { render, screen } from '@testing-library/react'
+import Looseleaf from 'components/molecules/Looseleaf'
 import React from 'react'
 
 describe('<Note />', () => {
