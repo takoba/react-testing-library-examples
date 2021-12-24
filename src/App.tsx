@@ -1,7 +1,7 @@
+import Looseleaf from "components/molecules/Looseleaf"
 import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from "styled-components"
-import Looseleaf from "components/molecules/Looseleaf"
 
 const Title = styled.h1`
   border-left: 0.75rem solid #9cc;
