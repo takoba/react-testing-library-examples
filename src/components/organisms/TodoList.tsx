@@ -28,9 +28,9 @@ const TodoList = (): JSX.Element => {
     setTodos([
       ...todos,
       {
-        id: Math.max(...todos.map((todo): number => todo.id)) + 1,
+        id: todos.length > 0 ? Math.max(...todos.map((todo): number => todo.id)) + 1 : 1,
         label: inputRef.current.value,
-        order: Math.max(...todos.map((todo) => todo.order)),
+        order: todos.length > 0 ? Math.max(...todos.map((todo) => todo.order)) : 1,
       },
     ])
     formRef.current?.reset()
@@ -48,8 +48,8 @@ const TodoList = (): JSX.Element => {
           ))}
       </List>
       <InputArea>
-        <form ref={formRef}>
-          <input type="text" ref={inputRef} />
+        <form ref={formRef} onSubmit={(e) => e.preventDefault()}>
+          <input type="text" ref={inputRef} onKeyDown={(e) => { e.code === 'Enter' && save() }} />
           <button type="button" onClick={save}>
             💾
           </button>
