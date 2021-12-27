@@ -1,19 +1,13 @@
 import React, { useRef, useState } from 'react'
 import styled from 'styled-components'
 
-interface Todo {
-  id: number
-  label: string
-  order: number
-}
-
 const Container = styled.div``
 const List = styled.ul``
 const ListItem = styled.li``
 const InputArea = styled.div``
 
 const TodoList = (): JSX.Element => {
-  const [todos, setTodos] = useState<Todo[]>([])
+  const [todos, setTodos] = useState<TodoList.Todo[]>([])
   const formRef = useRef<HTMLFormElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
