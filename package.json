@@ -43,6 +43,6 @@
   },
   "scripts": {
     "clean": "rimraf public/*.{html,js,txt}",
-    "typecheck": "tsc; rimraf -g src/**/*.js"
+    "typecheck": "tsc --noEmit"
   }
 }
